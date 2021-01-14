@@ -1,0 +1,23 @@
+/*
+Plugin Name: login form
+Description: Login Form with security and style features
+Author: www.wpadm.com
+*/
+
+
+.form_style .form  input.input_style, 
+.form_style .form  input.submit_style { 
+    /*width: 160px !important;
+    height: 48px !important;    */
+}
+.form_style .forgetmenot label{
+    padding-top: 5px;
+    line-height: 17px;
+}
+
+.form_style {
+    text-align: center;
+}
+.form_style .block-input #id_button_login_form{
+    margin-bottom: 10px;
+}

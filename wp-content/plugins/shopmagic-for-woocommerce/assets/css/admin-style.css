@@ -1,0 +1,352 @@
+/* Notices and survey
+--------------------------------------------- */
+.shopmagic-pro-notice svg {
+    fill: #333;
+    float: left;
+    height: 100px;
+    margin: 10px 20px 0 5px;
+    width: 100px;
+}
+
+.shopmagic-pro-notice p:last-of-type {
+    margin-bottom: 15px;
+}
+
+/* Global styles
+--------------------------------------------- */
+.error-icon {
+    float: right;
+    margin-top: 4px;
+    margin-right: 10px;
+    display: none;
+    visibility: hidden;
+    color: red;
+}
+
+.error-icon-visible {
+    display: inline;
+    visibility: visible;
+}
+
+.error-icon-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: -30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.error-icon:hover .error-icon-tooltip {
+    visibility: visible
+}
+
+/* Logger
+--------------------------------------------- */
+#modal-record-log-detail {
+    display: none;
+}
+
+#modal-record-log-detail .spinner {
+    display: none;
+    float: none;
+    width: 100%;
+    background-position: center center;
+}
+
+#modal-record-log-detail #record-log-detail-content .record-field {
+    margin: 5px 0;
+}
+
+#modal-record-log-detail #record-log-detail-content .record-description .value {
+    border:1px solid #d3d3d3;
+    padding:5px;
+    margin:5px 0 0;
+}
+
+#modal-record-log-detail .spinner.is-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+/* Product filters
+--------------------------------------------- */
+.wp-admin #woocommerce-order-items tbody tr .wc-order-edit-line-item-actions {
+    visibility: visible;
+}
+.wp-admin #woocommerce-order-items .wc-order-edit-line-item-actions a {
+    color: #7b0000;
+}
+.wp-admin #woocommerce-order-items .wc-order-edit-line-item-actions a:first-child {
+	padding-top: 5px;
+}
+
+/* Metaboxes
+--------------------------------------------- */
+#shopmagic_event_metabox .inside,
+#shopmagic_filter_metabox .inside,
+#shopmagic_action_metabox .inside {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Fields
+--------------------------------------------- */
+.shopmagic-field,
+.shopmagic-field .shopmagic-label,
+.shopmagic-field .shopmagic-input {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.shopmagic-field .shopmagic-label,
+.shopmagic-field .shopmagic-input {
+    vertical-align: top;
+}
+
+.shopmagic-label label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 3px;
+    padding: 0;
+}
+
+.shopmagic-field p.content {
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.shopmagic-field input[type="text"],
+.shopmagic-field input[type="password"],
+.shopmagic-field input[type="number"],
+.shopmagic-field input[type="search"],
+.shopmagic-field input[type="email"],
+.shopmagic-field input[type="url"],
+.shopmagic-field textarea,
+.shopmagic-field select {
+	width: 100%;
+	padding: 3px 5px;
+	resize: none;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.shopmagic-field .number {
+    width: 100px;
+}
+
+.shopmagic-input-wrap {
+    margin-bottom: 10px;
+}
+
+/* Events
+--------------------------------------------- */
+.shopmagic-fields {
+    position: relative;
+}
+
+.shopmagic-fields > .shopmagic-field::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	background: #f9f9f9;
+	border-color: #e1e1e1;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 30%;
+}
+
+.shopmagic-fields > .shopmagic-field::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.shopmagic-fields .shopmagic-field {
+    border-top: 1px solid #eee;
+    clear: both;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.shopmagic-fields .shopmagic-field:first-child {
+    border-top: 0;
+}
+
+.shopmagic-fields .shopmagic-label {
+    float: left;
+    margin: 0;
+    padding: 0 12px;
+    width: 30%;
+}
+
+.shopmagic-fields .shopmagic-input {
+    float: left;
+    width: 70%;
+    margin: 0;
+    padding: 0 12px;
+}
+
+/* Actions
+--------------------------------------------- */
+#action-area-stub {
+    display: none;
+}
+
+.shopmagic-action-footer,
+.shopmagic-action-header {
+    text-align: right;
+}
+
+.action-form-table .spinner,
+.action-form-table .error-icon {
+    margin-top: 10px;
+}
+
+.action_wrap {
+    display: inline-block;
+    min-width: 70px;
+    vertical-align: middle;
+}
+
+.action_title {
+    color: #444;
+    font-weight: bold;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.shopmagic-tfoot {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.shopmagic-tfoot::before,
+.shopmagic-tfoot::after {
+	content: '';
+	display: block;
+	line-height: 0;
+}
+
+.shopmagic-tfoot::after {
+    clear: both;
+}
+
+.shopmagic-tfoot > li {
+    float: right;
+    margin: 0;
+    padding: 8px 15px;
+}
+
+.sm-actions-wrap .postbox {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.sm-actions-wrap .postbox .hndle {
+    border-color: #ddd;
+}
+
+.shopmagic-table {
+	border: 0;
+	background: #fff;
+	border-spacing: 0;
+	border-radius: 0;
+	table-layout: auto;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	clear: both;
+	box-sizing: content-box;
+}
+
+.shopmagic-table > tbody > tr > td {
+    border-color: #ededed;
+    border-style: solid;
+    border-width: 1px 0 0;
+}
+
+.shopmagic-table > tbody > tr > td:first-child {
+    border-right-width: 1px;
+}
+
+.shopmagic-table > tbody > tr > td.config-area {
+    border-width: 1px 0 0;
+    padding: 0;
+}
+
+.shopmagic-table > tbody > tr > td.shopmagic-action-footer {
+    border-bottom-color: #ddd;
+    border-width: 1px 0;
+    padding: 15px;
+}
+
+.shopmagic-table.shopmagic-input-group > tbody > tr > td {
+    padding-left: 8px;
+}
+
+.shopmagic-table.shopmagic-input-group > tbody > tr > td:first-child {
+    border: 0;
+    padding-left: 0;
+}
+
+.shopmagic-table > tbody > tr:first-child > td {
+    border-top: 0;
+}
+
+.shopmagic-table tr.shopmagic-field > td.shopmagic-label {
+	padding: 15px 12px;
+	margin: 0;
+	background: #f9f9f9;
+	width: 30%;
+}
+
+.shopmagic-table tr.shopmagic-field > td.shopmagic-input {
+	padding: 15px 12px;
+	margin: 0;
+	border-left-color: #e1e1e1;
+}
+
+.action-form-table .notice {
+    margin: 0;
+}
+
+#shopmagic_action_metabox .wp-editor-container iframe,
+#shopmagic_action_metabox .wp-editor-area {
+    min-height: 300px;
+}
+
+/* Email templates
+--------------------------------------------- */
+.email_templates .error-icon,
+.email_templates .spinner {
+    float: none;
+}
+
+.email_templates .error-icon-tooltip {
+    top: inherit;
+    left: 150px;
+}

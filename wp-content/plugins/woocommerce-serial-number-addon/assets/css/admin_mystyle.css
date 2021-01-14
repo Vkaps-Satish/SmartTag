@@ -1,0 +1,13 @@
+.custom-combobox {
+    position: relative;
+}
+
+.custom-combobox span.err {
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+}
+
+table.display_meta img {
+    width: 270px;
+}

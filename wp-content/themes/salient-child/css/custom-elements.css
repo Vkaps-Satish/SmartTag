@@ -1,0 +1,150 @@
+.custom-select-wrap {  
+  border: 2px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.custom-select-wrap.box-opened {
+    border: 2px solid #527fb4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.nice-select {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  white-space: nowrap;
+  display: block;
+  height: 41px;
+  padding: 0 0 0 12px;
+  width: 100%;
+}
+
+.nice-select span.current {
+    display: block;
+    line-height: 41px;
+}
+
+.nice-select:after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 20px;
+    height: 15px;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    background: url(../images/sprite-img.png) no-repeat -35px -204px;
+}
+
+.nice-select.open:after {
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+}
+
+.nice-select .list {
+  background-color: #fff;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 0;
+  margin-bottom: 0;
+  transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  margin-left: 0;
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  height: auto;
+}
+
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding: 0 0 0 15px;
+  text-align: left;
+  transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+}
+
+.nice-select .option:hover {
+  background: #e1e1e1;
+}
+
+.custom-radio-box {
+    font-size:  0;
+    margin: 0 -5px;
+}
+
+.custom-radio-box .btn {
+    width: 20%;
+    padding: 0 5px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.custom-radio-img {
+    min-height: 68px;
+    line-height: 48px;
+    padding: 10px 10px;
+    border: 2px solid #e8e8e8;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+}
+
+.custom-radio-box .btn:hover .custom-radio-img {
+    border-color: #a1a1a1;
+}
+
+.custom-radio-box .btn.active .custom-radio-img {
+    border-color:  #527fb4;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.wpcf7-form-control-wrap.custom-select-wrap {
+    margin-bottom: 15px;
+}
+
+.wpcf7-form-control-wrap.custom-select-wrap {
+    margin-bottom: 15px;
+    position: absolute;
+    width: calc(100% - 20px);
+    left: 10px;
+    top: 29px;
+    z-index: 9;
+}
+
+.nice-select .option.selected.focus {
+    background: #527fb4;
+    color:  #fff;
+}

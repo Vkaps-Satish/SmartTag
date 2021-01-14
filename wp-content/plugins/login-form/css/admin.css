@@ -1,0 +1,347 @@
+/*
+Plugin Name: login form
+Description: Login Form with security and style features
+*/
+.wpadm-login-parts {
+    background: #fff;
+    margin-top:10px;
+    border:2px solid #939393;
+}
+
+.wpadm-login-parts-title:hover {
+    text-decoration:underline;
+    background: #f3f3f3;
+}
+.button-part {
+    text-decoration:none;
+}
+
+.wpadm-login-parts-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding:15px;
+    
+    cursor: pointer;
+}
+.wpadm-login-parts-body {
+    border-top: 1px solid #939393;
+    padding: 10px 10px 15px;
+}
+.button-part {
+    float:right;
+}
+.display-none {
+    display:none;
+}
+.display-tr {
+    display:table-row;
+}
+.login-form-pro-list {
+    margin-bottom:0px;
+    margin-top:12px;
+}
+.login-form-pro-list li {
+    margin-left:20px;
+    font-size: 16px;
+    margin-bottom:3px; 
+}
+
+.login-form-pro-list li span {
+    font-size: 14px;
+    float:left;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.login-form-pro-list li img {
+    float:left;
+}
+.login-form-pro-description-title{
+    font-size:17px;
+    
+}
+.login-form-pro-buy {
+    margin-top: -40px;
+}
+.login-form-logo {
+    float:left;
+    height: 128px;
+}
+.login-form-pro-description {
+    float: left;
+    margin-left: 25px;
+}
+.button-buy {
+    -moz-box-shadow:inset 0px 1px 5px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 5px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 5px 0px #bbdaf7;
+    background-color: #399bf7;
+    /*background-color:#79bbff;*/
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:bold;
+    padding:9px 24px;
+    text-decoration:none;
+    text-shadow:0px 2px 0px #528ecc;
+}
+.button-buy:hover {
+    background-color:#378de5;
+    text-decoration: underline;
+}
+.button-buy:active {
+    position:relative;
+    top:1px;
+}
+
+fieldset{
+    margin: 8px;
+    border: 1px solid silver;
+    padding: 8px;    
+    border-radius: 4px;
+}
+
+
+#lf-s-content {
+    background-color: white;
+    margin: 0;
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+#lf-s-content .head {
+    padding: 60px 10px 10px 0px;
+    margin: 0 0 0 0;
+    padding-left: 160px;
+    left: 0;
+    right: 0;
+
+    background: url(../img/login-form.png) 20px center no-repeat,none;
+    background-color: #ffffff;
+    background-size: 128px 128px;
+    height: 100px;
+    min-width: 470px;
+    max-width: 950px;
+
+
+}
+
+#lf-s-content .head h1 {
+    color: black;
+    padding-left: 10px;
+    margin-top: 0px;
+    -webkit-font-smoothing: antialiased;
+    /*font: 400 1.75em "proxima-nova","Open Sans",Helvetica,Arial,sans-serif*/
+    font-family: "proxima-nova","Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+#lf-s-content .head h1 small {
+    font-weight: normal;
+    font-size: 20px;
+    display: block;
+    padding-top: 15px;
+}
+
+
+
+
+#lf-s-content .stars-content {
+    border-top: 2px solid #d5dde4;
+    margin-bottom: 20px;
+}
+
+#lf-s-content .stars-content .stars-left {
+    padding-left: 30px;
+    padding-top: 20px;
+    min-height: 40px;
+    vertical-align: middle;
+    background-color: #ebf1f5;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+
+}
+
+#lf-s-content .stars-content .stars-right {
+    float: right;
+    text-align: right;
+    vertical-align: text-bottom;
+    background-color: #ebf1f5;
+    min-height: 40px;
+    padding-right: 10px;
+
+}
+
+#lf-s-content .button-stars {
+    background-color: #B15801;
+    border-color: #A0540A;
+    margin-left: 10px;
+    margin-top: -4px;
+    font-size: 0.7em;
+    color: gold;
+    text-align: left;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+
+}
+#lf-s-content .button-stars:hover {
+    font-size: 0.7em;
+    color: yellow;
+    border-color: #A07F4C;
+}
+
+#lf-s-content .stars-remover {
+    font-size: 1em;
+    color: black;
+}
+
+#lf-s-content .menu {
+    padding: 0px 0px 0px 30px;
+    background-color: white;
+}
+
+
+#lf-s-content .menu ul {
+    margin-bottom: 1px;
+    margin-top: 30px;
+}
+
+@-moz-document url-prefix() {
+    #lf-s-content .menu ul {
+        margin-bottom: 2px;
+        margin-top: 30px;
+    }
+}
+
+
+#lf-s-content .menu ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#lf-s-content .menu ul li a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "proxima-nova","Open Sans", Helvetica, Arial, sans-serif;
+    box-shadow: none;
+    padding: 10px 20px 10px 20px;
+    background-color: #ECF2F6;
+}
+
+#lf-s-content .menu ul li a:hover{
+    color: black;
+}
+
+#lf-s-content .menu .active {
+    color: #ffffff;
+    /*border-bottom: 3px solid #15a4fa;*/
+    background-color: #15a4fa;
+}
+
+#lf-s-content .tabs {
+    /*border-top: 3px solid #d5dde4;*/
+    border-top: 3px solid #15a4fa;
+    /*margin-top: -10px;*/
+    padding-left: 30px;
+    /*padding-top: 10px;*/
+    padding-bottom: 10px;
+    min-height: 100%;
+    background-color: #f9f9f9;
+
+}
+
+#lf-s-content .tab {
+    display: none;
+    min-height: 100%;
+    max-width: 1100px;
+}
+
+#lf-s-content .form-get-pro {
+    text-align: center;
+    float: left;
+    margin-top:53px;
+    margin-left: -150px;
+}
+
+#lf-s-content .menu .contact_us_btn {
+    background-color: green;
+    height: 30px;
+
+}
+
+
+#lf-s-content .contact_us_cont {
+    margin-left: 50px;
+    top: -10px;
+}
+
+#lf-s-content .contact_us_descr {
+    position: relative;
+    top:4px;
+}
+
+
+
+
+@media screen and (max-width: 835px) {
+    #lf-s-content .stars-content small {
+        display: none;
+    }
+
+    #lf-s-content .menu ul li {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #lf-s-content .button-stars {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #lf-s-content .contact_us_descr {
+        display: none;
+    }
+
+    #lf-s-content .contact_us_cont {
+        margin-left: 0px;
+    }
+
+    #lf-s-content .menu ul li {
+        display: inline-block;
+        /*margin-bottom: 30px;*/
+    }
+
+}
+@media screen and (max-width: 1100px) {
+    #lf-s-content .form-get-pro {
+        float: none;
+        margin-top: 10px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    #lf-s-content .stars-content {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #lf-s-content .head h1 {
+        display: none;
+    }
+}

@@ -1,0 +1,4 @@
+*** Wholesale For WooCommerce ***
+
+2019-08-27 - version 1.0.0
+* Initial release.
